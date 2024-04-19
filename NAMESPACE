@@ -1,0 +1,15 @@
+exportPattern("^[[:alpha:]]+")
+importFrom(MASS, boxcox)
+importFrom(psych, describe)
+importFrom(summarytools, descr, freq)
+importFrom(randtests, runs.test)
+importFrom(cubature, adaptIntegrate)
+importFrom(rapportools, skewness)
+importFrom(flextable, flextable)
+importFrom(lmtest, gqtest, dwtest)
+importFrom(stats, qchisq, var)
+importFrom(ggplot2, ggplot) 
+import(dplyr)
+
+
+
