@@ -377,7 +377,7 @@ mean(x, 0.10)
 ```
 
 
-```{r p1-solution}
+```{r p1-solution, message=FALSE}
 # Indicadores de centro
 library(paqueteMETODOS)
 data("CarreraLuz22")
@@ -385,7 +385,7 @@ x=CarreraLuz22$timerun/60
 mean(x)            # media
 median(x)          # mediana
 (min(x)+max(x))/2  # rango medio
-mean(x, 0.10)      # media truncada
+mean(x, trim =0.10)      # media truncada
 ```
 
 
