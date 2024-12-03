@@ -44,12 +44,12 @@ Existe un grupo de modelos identificados para las variables aleatorias tanto dis
 
 #### **Modelos discretos**:
 
-Bernoulli, binomial, Poisson, geometrico, hipergeometrico, binomial negativo.
+Bernoulli, Binomial, Poisson, Geométrico, Hipergeométrico, Binomial negativo.
 
 
 #### **Modelos continuos**:
 
-uniforme,  normal,  exponencial,  lognormal,  gamma,  beta,  Weibull,  Cauchy,  Gumbel,  t-Student,  Ji-cuadrado,  F de Fisher,  Empirica o  Kernel
+Uniforme,  Normal,  Exponencial,  Lognormal,  Gamma,  Beta,  Weibull,  Cauchy,  Gumbel,  t-Student,  Ji-cuadrado,  F de Fisher,  Empírica o  Kernel
 
 
 En $R$ los nombre de las funciones diseñadas para los cálculos requeridos están conformadas por dos partes:
@@ -59,14 +59,14 @@ La primera parte es una letra que identifica el propósito de la función.
 
 + *d* : función de distribución de probabilidad $f(x)= P(X=x)$, para el caso discreto. En el caso de las variables continuas representa la función de densidad de probabilidad $f(x)$
 
-+ *p* : función de probbilidad acumulada $F(x) = P(X \leq x)$
++ *p* : función de probabilidad acumulada $F(x) = P(X \leq x)$
 
 + *q* : percentil $X_p$
 
 + *r* : generador de números aleatorios
 
 
-La siguiene tabla presenta estas las funciones para los principales modelos tanto discretos como continuos
+La siguiente tabla presenta estas las funciones para los principales modelos tanto discretos como continuos
 
 |*modelo*            |  $F(x)$  |  $X_{p}$ |  $f(x)$  | aleatorio   |
 |:-------------------|:---------|:---------|:---------|:------------|
@@ -168,7 +168,7 @@ qqline(z, col="red")
 
 ### **Problema 3**
 
-Para una variables $X$ con distribución binomial con parámetros $n=50$ y $p=0.05$ y la variable $Y$,  media de una muestra de tamaño $n = 30$ de $X$, realice una grafica comparativa de las distribuciones  
+Para una variables $X$ con distribución binomial con parámetros $n=50$ y $p=0.05$ y la variable $Y$,  media de una muestra de tamaño $n = 30$ de $X$, realice una gráfica comparativa de las distribuciones  
 
 
 ```{r p3, exercise=TRUE, exercise.lines = 15}
@@ -215,7 +215,7 @@ n=1000
 
 ```{r p5-hint}
 n=1000
-poblacion=sample(c("A", "B"),n,  ,  ))
+poblacion=sample(c("A", "B"),n,  ,  )
 
 ```
 
@@ -272,7 +272,7 @@ table(muestra(poblacion, 20))
 
 ### **Problema 7**
 Victor distribuye partes para motocicletas, y se estima que cada una de ellas tiene una probabilidad de 0.03
- de estar defectuosa. José tambien distribuye partes semejantes y su producto tiene una probabilidad de 0.05
+ de estar defectuosa. José también distribuye partes semejantes y su producto tiene una probabilidad de 0.05
  de estar defectuoso. Usted recibe un envío de 100  partes procedente de cada vendedor (Victor y José).
  
 Utilice una muestra simulada para estimar la probabilidad de que el número total de partes defectuosas sea menor a diez.
@@ -310,10 +310,10 @@ xy=data.frame(x,y)         # matriz de X y Y
 
 ```{r p7-solution}
 n=1000                     # numero de simulaciones
-x=rbinom(n, 100, 0.03)     # sumulacion de X
-y=rbinom(n, 100,0.05)      # sumulacion de Y
+x=rbinom(n, 100, 0.03)     # simulación de X
+y=rbinom(n, 100,0.05)      # simulación de Y
 xy=data.frame(x,y)         # matriz de X,Y
-total = apply(xy,1, sum)   # construccion total
+total = apply(xy,1, sum)   # construcción total
 
 ```
 
@@ -359,7 +359,7 @@ n=1000
 x = rnorm(n, 2,0.1)   # simulación de 1000 longitudes
 y = rnorm(n,3, 0.2)   # simulación de 1000 anchos
 xy=data.frame(x,y)    # matriz X,Y 
-A=apply(xy, 1,prod)   # contrucion área
+A=apply(xy, 1,prod)   # contrución área
 cat("E[A]", mean(A), "\n")  # valor esperado
 cat("V[A] = ", var(A))      # varianza
 

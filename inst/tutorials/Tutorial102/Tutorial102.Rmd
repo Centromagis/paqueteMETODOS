@@ -38,7 +38,7 @@ knitr::include_graphics("images/banner2.png")
 </br>
 
 El presente tutorial contiene preguntas relacionadas con la construcción y análisis de las distribuciones de frecuencia a través de tablas, 
-conceptos importantes en el análisis decriptivo de datos
+conceptos importantes en el análisis descriptivo de datos
 
 </br>
   
@@ -48,7 +48,7 @@ conceptos importantes en el análisis decriptivo de datos
 
 #### **VARIABLES CUALITATIVAS**
 
-El resumen de datos para variables cualitativs se centra en la construcción de tablas de frecuencia. Dependiendo si la variable es medida en escala nominal u ordinal la tabla presenta o no las frecuencias acumuladas
+El resumen de datos para variables cualitativas se centra en la construcción de tablas de frecuencia. Dependiendo si la variable es medida en escala nominal u ordinal la tabla presenta o no las frecuencias acumuladas
 
 </br></br>
 
@@ -98,7 +98,7 @@ En el caso de variables cuantitativas la construcción de tablas requiere la rec
 
 #### **TABLAS DE DOBLE ENTRADA, TABLAS CRUZADAS o TABLAS DE CONTINGENCIA**
 
-Estas tabla son de utilidad cuando se requiere el analisis bivariado de dos variables cualitativas. Se denominan tambien tablas de doble entrada debido a las columnas representan los niveles de una variable, mientras que las filas representan los niveles de la segunda variable.
+Estas tabla son de utilidad cuando se requiere el análisis bivariado de dos variables cualitativas. Se denominan también tablas de doble entrada debido a las columnas representan los niveles de una variable, mientras que las filas representan los niveles de la segunda variable.
 
 
 </br></br>
@@ -122,9 +122,9 @@ quiz(
            correct = "Correcto!. La suma de las frecuencias relativas es uno, pero se lee en porcentaje.", 
            allow_retry = TRUE,
            answer("1", correct = TRUE), 
-           answer("100", message = "Cerca, pero no,...intentalo de nuevo!"),
+           answer("100", message = "Cerca, pero no,...inténtalo de nuevo!"),
            answer("n, tamaño de la muestra", message = "Incorrecto. Intenta de nuevo!."),
-           answer("Ninguna de las anteriores" , message = "Incorrecto...intentalo de nuevo!"),
+           answer("Ninguna de las anteriores" , message = "Incorrecto...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -139,7 +139,7 @@ quiz(
 
 La siguiente tabla resume los datos recogidos en una encuesta sobre calidad de vida. El estudio recogió información de 900 personas sobre:
 
-$A$ : realiza actividad de portiva
+$A$ : realiza actividad deportiva
 $B$ : se alimenta de manera saludable
 
 ```{r, echo=FALSE, , out.width="40%", fig.align = "center"}
@@ -152,8 +152,8 @@ quiz(
   question("¿No podemos afirmar de acuerdo con la anterior información, que:", 
            correct = "Correcto|, 300/900= 0.33. Esto significa que el 33.% no realiza actividad deportiva", 
            allow_retry = TRUE,
-           answer("Un poco más de la mitad se alimenta saludablemente", message = "No...intentalo de nuevo!"),
-           answer("El 51% de los encuestados se alimenta saludablemente y realiza actividad deportiva", message = "No...intentalo de nuevo!"),
+           answer("Un poco más de la mitad se alimenta saludablemente", message = "No...inténtalo de nuevo!"),
+           answer("El 51% de los encuestados se alimenta saludablemente y realiza actividad deportiva", message = "No...inténtalo de nuevo!"),
            answer("El 30% de los encuestados no realiza actividad deportiva", correct = TRUE),
            answer("El 29% de los encuestados no tiene habitos saludables", message = "Incorrecto. Intenta de nuevo!."),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -204,9 +204,9 @@ quiz(
            correct = "Correcto!, 423/1922 = 0.2200832. El 22% de los participantes pertenecen a la categoría Veteranos A", 
            allow_retry = TRUE,
            answer("Los participantes en la categoría Veteranos A constituyen el  22% del  grupo", correct = TRUE),
-           answer("Los participantes en la categorá Abierta conforman el 70% del grupo", message = "No...intentalo de nuevo!"),
+           answer("Los participantes en la categoría Abierta conforman el 70% del grupo", message = "No...inténtalo de nuevo!"),
            answer("La media de la variable es 1179", message = "Incorrecto. Intenta de nuevo!."),
-           answer("El dato atípico lo constituye la categoría Juvenil con 19 participantes", message = "No...intentalo de nuevo!"),
+           answer("El dato atípico lo constituye la categoría Juvenil con 19 participantes", message = "No...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -224,10 +224,10 @@ quiz(
   question("Cuando se requiere construir una tabla de frecuencias a partir de una variables cualititativa en escala nominal, se deben incluir: ", 
            correct = "Correcto, aunque en algunas publicaciones solo aparezca una de las frecuencias, lo correcto es aparezcan las dos columnas.", 
            allow_retry = TRUE,
-           answer("Las frecuencias absolutas y las frecuencias absolutas acumuladas ", message = "No,...intentalo de nuevo!"),
+           answer("Las frecuencias absolutas y las frecuencias absolutas acumuladas ", message = "No,...inténtalo de nuevo!"),
            answer("Las frecuencias absolutas y relativas", correct = TRUE),
            answer("Las frecuencias absolutas y relativas y tambien las frecuencias acumuladas", message = "Incorrecto. Intenta de nuevo!."),
-           answer("Solo las frecuencias relativas", message = "No...intentalo de nuevo!"),
+           answer("Solo las frecuencias relativas", message = "No...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -246,9 +246,9 @@ quiz(
   question("Para el caso de las variables cualitativas es necesario agrupar los valores en intervalos siguiendo los siguientes criterios :", 
            correct = "Respuesta y explicación!, .", 
            allow_retry = TRUE,
-           answer("Siempre debe tomar intervalos de igual longitud", message = "No, pero...intentalo de nuevo!"),
-           answer("En todos los casos la función de R hace el proceso mediante la regla de Sturges", message = "No...intentalo de nuevo!"),
-           answer("Es necesario analizar el contexto para tomar una decisión, es decir depende si el resultado se compara con resultados anteriore o si existe una clasificacion natural de la variable", correct = TRUE),
+           answer("Siempre debe tomar intervalos de igual longitud", message = "No, pero...inténtalo de nuevo!"),
+           answer("En todos los casos la función de R hace el proceso mediante la regla de Sturges", message = "No...inténtalo de nuevo!"),
+           answer("Es necesario analizar el contexto para tomar una decisión, es decir depende si el resultado se compara con resultados anteriores o si existe una clasificacion natural de la variable", correct = TRUE),
            answer("Ninguna de las anteriores", message = "Incorrecto. Intenta de nuevo!."),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
@@ -273,7 +273,7 @@ El paquete `paqueteMETODOS` contiene información de los tiempo obtenidos por 19
 * **categoría**: 1. Juvenil, 2. Abierta, 3. Veteranos A, 4. Veteranos B, 5. Veteranos C
 * **nacionalidad**: nacionalidad del atleta
 
-Construya una tabla que permita  el análisis de la variable categoria por sexo
+Construya una tabla que permita  el análisis de la variable categoría por sexo
 
 ```{r p1, exercise=TRUE, exercise.lines = 5}
 library(paqueteMETODOS)
@@ -345,7 +345,7 @@ El paquete `paqueteMETODOS` contiene información de los tiempo obtenidos por 19
 * **categoría**: 1. Juvenil, 2. Abierta, 3. Veteranos A, 4. Veteranos B, 5. Veteranos C
 * **nacionalidad**: nacionalidad del atleta
 
-Las categírias estan delimidatas por rango de edades así
+Las categóricas están delimitadas por rango de edades así
 | Categoría   | Rango de edad                      |  
 |:-----------:|:-----------------------------------|
 | Juvenil     |  menos de 18 años                  |

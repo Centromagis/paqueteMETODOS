@@ -90,8 +90,8 @@ quiz(
 question("La caja del diagrama de cajas y bigotes, representa: ", 
 correct = "Respuesta y explicación!, .", 
 allow_retry = TRUE,
-answer("El 50% de los valores al rededor de la media", message = "Cerca, pero no...intentalo de nuevo!"),
-answer("Todos los valores, menos los valores atípicos", message = "Nop...intentalo de nuevo!"),
+answer("El 50% de los valores al rededor de la media", message = "Cerca, pero no...inténtalo de nuevo!"),
+answer("Todos los valores, menos los valores atípicos", message = "Nop...inténtalo de nuevo!"),
 answer("Los valores comprendidos entre los cuartiles 25 y 75", message = "Incorrecto. Intenta de nuevo!."),
 answer("Ninguna de las anteriores", correct = TRUE),
 # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -112,8 +112,8 @@ quiz(
 question("La manera correcta de representar gráficamente la variable NIVEL DE SATISFACCIÓN POR SERVICIO DE ENVÍO  es:", 
 correct = "Correcto!,.El diagrama de barras es el diagrama adecuado para representar una variable cualitativa en escala ordinal.", 
 allow_retry = TRUE,
-answer("Un diagrama circular o diagrama de tortas", message = "No,...intentalo de nuevo!"),
-answer("Un diagrana de dispersión", message = "No...intentalo de nuevo!"),
+answer("Un diagrama circular o diagrama de tortas", message = "No,...inténtalo de nuevo!"),
+answer("Un diagrana de dispersión", message = "No...inténtalo de nuevo!"),
 answer("Un histograma", message = "Incorrecto. Intenta de nuevo!."),
 answer("Un diagrama de barras", correct = TRUE),
 # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -134,8 +134,8 @@ quiz(
 question("Un histograma no debe ser empleado para  la representación de una variable como:", 
 correct = "Correcto!, El histograma construye intervalos que contiene los datos y permite encontrar aproximaciones de los indicadores, pero no sus valores precisos.", 
 allow_retry = TRUE,
-answer("El tiempo de duración de una llamada", message = "No...intentalo de nuevo!"),
-answer("El peso de un paquete", message = "No...intentalo de nuevo!"),
+answer("El tiempo de duración de una llamada", message = "No...inténtalo de nuevo!"),
+answer("El peso de un paquete", message = "No...inténtalo de nuevo!"),
 answer("El tipo de defecto presentado una prenda de vestir", correct = TRUE),
 answer("El número de hijos de un hogar", message = "Incorrecto. Intenta de nuevo!."),
 # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -167,8 +167,8 @@ quiz(
 question("Podemos con estra información afirmar:", 
 correct = "Correcto!, el rango es igual a 206 - 104 = 102 s.", 
 allow_retry = TRUE,
-answer("La mediana de los tiempos es 161", message = "No...intentalo de nuevo!"),
-answer("La media es 186", message = "No...intentalo de nuevo!"),
+answer("La mediana de los tiempos es 161", message = "No...inténtalo de nuevo!"),
+answer("La media es 186", message = "No...inténtalo de nuevo!"),
 answer("El rango es 102", correct = TRUE),
 answer("El valor mínimo es 10.4" , message = "Incorrecto. Intenta de nuevo!."),
 # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -208,10 +208,10 @@ quiz(
 question("De la gráfica no se puede afirmar :", 
 correct = "Correto!, En presencia de datos atípicos la media presenta una desviación debido al aumento notorio de la suma de todos los valores. No ocurre lo mismo con la mediana es robuzta ante cambios en los extremos.", 
 allow_retry = TRUE,
-answer("Este diagráma permite visualizar el rango de tiempo con mayor concentración", message = "Cerca, pero no...intentalo de nuevo!"),
+answer("Este diagráma permite visualizar el rango de tiempo con mayor concentración", message = "Cerca, pero no...inténtalo de nuevo!"),
 answer("Existen muchos datos atípicos que hacen que la media sea el mejor indicador de centro", correct = TRUE),
 answer("El ganador registró un tiempo de carrera de aproximadamente 30 minutos", message = "Incorrecto. Intenta de nuevo!."),
-answer("La forma de la gráfica es simétrica con algunos datos atípicos" , message = "Nop...intentalo de nuevo!"),
+answer("La forma de la gráfica es simétrica con algunos datos atípicos" , message = "Nop...inténtalo de nuevo!"),
 # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
 submit_button = "Enviar respuesta",
 try_again_button = "Intentar de nuevo"),
@@ -228,7 +228,7 @@ caption = " "
 
 ### **Problema 1**
 
-El paquete  `paqueteMETODOS` contiene la data inflacion que corresponde a la serie de tiempo de este indicador desde enero de 1993 a diciembre de 2022. Construya una gráfica de tiempo que de cuenta del comportamiento de esta variable para el periodo indicado.
+El paquete  `paqueteMETODOS` contiene la data inflación que corresponde a la serie de tiempo de este indicador desde enero de 1993 a diciembre de 2022. Construya una gráfica de tiempo que de cuenta del comportamiento de esta variable para el periodo indicado.
 
 ```{r p1, exercise=TRUE, exercise.lines = 10}
 data(paqueteMETODOS)
@@ -260,7 +260,7 @@ lwd = 4)
 
 ### **Problema 2*
 
-Durante 5 meses se construyen 134 kilómetros de carretera en la siguiente forma: En el primer més, 3.60% del total del proyecto; en el segundo més un 7.60% del total; en el tercer més, el 15.3% del total; en el cuarto més 24.5% del total y en último més, el 49% restante.
+Durante 5 meses se construyen 134 kilómetros de carretera en la siguiente forma: En el primer mes, 3.60% del total del proyecto; en el segundo mes un 7.60% del total; en el tercer mes, el 15.3% del total; en el cuarto mes 24.5% del total y en último mes, el 49% restante.
 
 ```{r p2, exercise=TRUE, exercise.lines = 10}
 

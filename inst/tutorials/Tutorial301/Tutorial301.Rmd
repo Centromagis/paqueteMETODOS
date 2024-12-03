@@ -98,7 +98,7 @@ cor(x,y)
 
 #### **COEFICIENTE DE CORRELACION SPEARMAN**
 
-Este coeficiente emplea en variables numéricas en escala de intervalo, construidas como resultado de instrumentos estandarizados para medir variables latentes, que son de observación directa
+Este coeficiente emplea en variables numéricas en escala de intervalo, construidas como resultado de instrumentos estandarizados para medir variables latentes, que son de observación directa.
 
 
 <!-- ### **MAPA**  -->
@@ -113,7 +113,7 @@ Este coeficiente emplea en variables numéricas en escala de intervalo, construi
 
 ### **Pregunta 1**
 
-El siguente gráfico representa la relación entre dos variables $X$ y $Y$. 
+El siguiente gráfico representa la relación entre dos variables $X$ y $Y$. 
 
 
 ```{r, echo=FALSE, , out.width="70%", fig.align = "center"}
@@ -127,10 +127,10 @@ quiz(
   question("Se puede afirmar que :" , 
            correct = "Aunque la relación entre X y Y no es perfecta, la nube de puntos si presenta una forma que permite observar una relación lineal media, .", 
            allow_retry = TRUE,
-           answer("La variable X y la variable Y, tienen una relación causal", message = "No, pero no...intentalo de nuevo!"),
+           answer("La variable X y la variable Y, tienen una relación causal", message = "No, pero no...inténtalo de nuevo!"),
            answer("La variable X y la variable Y, tienen una relación lineal negativa media",  correct = TRUE),
            answer("La variable X y la variable Y, tiene una relación alta pero no lineal", message = "Incorrecto. Intenta de nuevo!."),
-           answer("La variable X y la variable Y, no presentan ninguna relación estadística", message = "No...intentalo de nuevo!"),
+           answer("La variable X y la variable Y, no presentan ninguna relación estadística", message = "No...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -149,10 +149,10 @@ quiz(
   question("Cuando las variables de estudio proceden de un instrumento con preguntas con respueta en escala ordinal, convertidas en escala de intervalo, el indicador apropiado para medir la asociación de la suma de resultados obtenidos por las persoanas para diferentes factores del instrumento es: ", 
            correct = "Correcto!, el coeficiente de correlación de Spearman corresponde a un indicador no paramétrico que se utiliza en variables numéricas de escala de intervalo.", 
            allow_retry = TRUE,
-           answer("Coeficiente de Pearson", message = "No, pero...intentalo de nuevo!"),
+           answer("Coeficiente de Pearson", message = "No, pero...inténtalo de nuevo!"),
            answer("Coeficiente de Spearman", correct = TRUE),
            answer("Coeficiente Tau b de Kendal", message = "Incorrecto. Intenta de nuevo!."),
-           answer("Coeficiente Eta", message = "No...intentalo de nuevo!"),
+           answer("Coeficiente Eta", message = "No...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -171,8 +171,8 @@ quiz(
   question("El coeficiente de correlación toma su signo positivo o negativo", 
            correct = "Correcto!, el coeficiente se obtiena al dividir la cov(x,y) con la raiz cuadra de la multiplicación de las varianzas de X y Y. , . Donde las varianza son siempre positivas. El signo entonces está asociado con la covarianza. Cov(X,Y)=E(XY)-E(X)E(Y)", 
            allow_retry = TRUE,
-           answer("Del valor esperado de X, E[X]", message = "No...intentalo de nuevo!"),
-           answer("Del valor esperado de Y, E[Y]", message = "No...intentalo de nuevo!"),
+           answer("Del valor esperado de X, E[X]", message = "No...inténtalo de nuevo!"),
+           answer("Del valor esperado de Y, E[Y]", message = "No...inténtalo de nuevo!"),
            answer("De la varianza de X por la varianza de Y, V[X]V[Y]", message = "Incorrecto. Intenta de nuevo!."),
            answer("Del valor de la covarianza entre las variables X y Y , Cov[XY] ", correct = TRUE),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -197,8 +197,8 @@ quiz(
   question("De la gráfica se puede afirmar", 
            correct = "Correcto!, existe una relación cuadrática entre las variables.", 
            allow_retry = TRUE,
-           answer("Existe una relación lineal positiva", message = "Cerca, pero no...intentalo de nuevo!"),
-           answer("Existe una relación lineal negativa", message = "Nop...intentalo de nuevo!"),
+           answer("Existe una relación lineal positiva", message = "Cerca, pero no...inténtalo de nuevo!"),
+           answer("Existe una relación lineal negativa", message = "Nop...inténtalo de nuevo!"),
            answer("No existe una relación lineal", message = "Incorrecto. Intenta de nuevo!."),
            answer("Existe relación no lineal", correct = TRUE),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -219,8 +219,8 @@ quiz(
   question("Suponga que la correlación de Pearson entre dos variables es igual a 0.56. Podemos afirmar que:", 
            correct = "Correcto!, valores cercanos a 0.50, son considerados como una fuerza lineal media.", 
            allow_retry = TRUE,
-           answer("No existe una relación media entre las variables", message = "No...intentalo de nuevo!"),
-           answer("La relación entre las variables es debil", message = "Nop...intentalo de nuevo!"),
+           answer("No existe una relación media entre las variables", message = "No...inténtalo de nuevo!"),
+           answer("La relación entre las variables es debil", message = "Nop...inténtalo de nuevo!"),
            answer("La relación entre las variables muy fuerte", message = "Incorrecto. Intenta de nuevo!."),
            answer("La la relación entre las variables es media", correct = TRUE),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -238,7 +238,7 @@ quiz(
 
 ### **Problema 1**
 
-Para el grupo de datos contenidos en la base arboles (data(arboles))  determine que variable (altura o diametro) tiene más relación con la variable peso. 
+Para el grupo de datos contenidos en la base arboles (data(arboles))  determine que variable (altura o diámetro) tiene más relación con la variable peso. 
 
 ```{r p1, exercise=TRUE, exercise.lines = 15}
 library(paqueteMETODOS)
@@ -266,7 +266,7 @@ cor(arboles$peso,arboles$altura)
 
 ### **Problema 2**
 
-Realice las pruebas de hipótesis con las que pueda verificar si las correlaciones entre las variables : peso, diametro y altura son diferentes de cero
+Realice las pruebas de hipótesis con las que pueda verificar si las correlaciones entre las variables : peso, diámetro y altura son diferentes de cero
 
 
 ```{r p2, exercise=TRUE, exercise.lines = 15}
@@ -298,7 +298,7 @@ cor.test(arboles$peso, arboles$altura)
 
 La base de datos `vivienda`  contenida en `paqueteMET` contiene las siguientes variables: id, zona, piso, estrato, preciom, areaconst,  parqueaderos, banios, habitaciones, tipo,  barrio, longitud, latitud 
 
-Contruya las siguientes dataset que cumpla con la siguientes condiciones:
+Construya las siguientes dataset que cumpla con la siguientes condiciones:
 
 * casas : solo casas 
 * casasSUR : solo casas ubicadas en el sur de la ciudad
@@ -370,8 +370,7 @@ GGally::ggpairs(casaSUR56[,5:9], title="Casas, ubicación sur, estratos 5 y 6")
 
 La base de datos `vivienda`  contenida en `paqueteMET` contiene las siguientes variables: `id`, `zona`, `piso`, `estrato`, `preciom`, `areaconst`,  `parqueaderos`, `banios`, `habitaciones`, `tipo`,  `barrio`, `longitud`, `latitud` 
 
-Como se pudo observar la variable preciom, presenta asimetría a la derecha. Valida el cambio que ocurre cuando se transforma a través de la función logarítmica y 
-visualiza su relación con las variables : `areaconst`,  `parqueaderos`, `banios`, `habitaciones`
+Como se pudo observar la variable preciom, presenta asimetría a la derecha. Valida el cambio que ocurre cuando se transforma a través de la función logarítmica y visualiza su relación con las variables : `areaconst`,  `parqueaderos`, `banios`, `habitaciones`
 
 
 

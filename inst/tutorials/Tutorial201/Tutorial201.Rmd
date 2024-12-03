@@ -63,7 +63,7 @@ Para $X$ un variable aleatoria discreta, su función de distribución de probabi
 
 #### **FUNCIÓN DE DENSIDAD DE PROBABILIDAD**
 
-Para el caso de las variables aleatorias continuas se define como función de densidad de probablidad a $f(x)$, tal que cumpla las siguientes condiciones: ($i$) $f(x) \geq 0$, ($ii$) $\int\limits_{-\infty}^{+\infty}f(x)\:dx =1$. 
+Para el caso de las variables aleatorias continuas se define como función de densidad de probabilidad a $f(x)$, tal que cumpla las siguientes condiciones: ($i$) $f(x) \geq 0$, ($ii$) $\int\limits_{-\infty}^{+\infty}f(x)\:dx =1$. 
 Además se define : $P(a < X < b)=\int\limits_{a}^{b}f(x)\:dx$
 
 </br>
@@ -152,7 +152,7 @@ knitr::include_graphics("images/variables.png")
 
 ### **Pregunta 1**
 
-En relación con la distribución normal con función de densidad :
+En relación con la distribución normal con función de densidad:
 
 $$f(x)= \dfrac{1}{\sqrt{2\pi \sigma^{2}}} \hspace{.1cm} e^{-\big(\frac{1}{2\sigma^{2}}(x-\mu)^{2}\big)}	 \hspace{.5cm}  -\infty \leq  x \leq \infty $$ 
 
@@ -163,9 +163,9 @@ quiz(
            correct = "Correcto!, la distribución normal corresponde a una variable continua.", 
            allow_retry = TRUE,
            answer("Es una distribución de probabilidad teórica discreta.", correct = TRUE),
-           answer("La distancia entre el eje vertical trazado en la media y el punto de inflexión de la curva es la desviación estándar.", message = "Nop...intentalo de nuevo!"),
+           answer("La distancia entre el eje vertical trazado en la media y el punto de inflexión de la curva es la desviación estándar.", message = "Nop...inténtalo de nuevo!"),
            answer("Es simétrica y unimodal.", message = "Incorrecto. Intenta de nuevo!."),
-           answer("Cualquier valor entre – infinito y + infinito es teóricamente posible.", message = "Cerca, pero no...intentalo de nuevo!"),
+           answer("Cualquier valor entre – infinito y + infinito es teóricamente posible.", message = "Cerca, pero no...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -186,8 +186,8 @@ quiz(
   question("Es necesario conocer para hallar su valor: ", 
            correct = "Correcto!, al reemplazar x en f(x) se obtiene el valor de P(X=x).", 
            allow_retry = TRUE,
-           answer("V[X]", message = "No...intentalo de nuevo!"),
-           answer("F(x)", message = "No...intentalo de nuevo!"),
+           answer("V[X]", message = "No...inténtalo de nuevo!"),
+           answer("F(x)", message = "No...inténtalo de nuevo!"),
            answer("f(x)", correct = TRUE),
            answer("E[X]", message = "Incorrecto. Intenta de nuevo!."),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -222,8 +222,8 @@ quiz(
   question("De ella podemos afirmar que", 
            correct = "Correcto!, f(x) corresponde a un modelo continuo, más concretamente el modelo exponencial.", 
            allow_retry = TRUE,
-           answer("La variable aleatoria X,es discreta  para valores mayores a cero", message = "No,...pero intentalo de nuevo!"),
-           answer("La variable no esta definida para valores discretos", message = "No...intentalo de nuevo!"),
+           answer("La variable aleatoria X,es discreta  para valores mayores a cero", message = "No,...pero inténtalo de nuevo!"),
+           answer("La variable no esta definida para valores discretos", message = "No...inténtalo de nuevo!"),
            answer("La variable X, es continua con valores mayores a cero", correct = TRUE),
            answer("f(x) no cumple con las condiciones requeridas y por tanto X no es una variable aleatoria", message = "Incorrecto. Intenta de nuevo!."),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -255,10 +255,10 @@ quiz(
   question("f(x) será una función de densidad de probabilidad si: ", 
            correct = "Correcto!, f(x) corresponde a una linea horizontal entre 0 y 1. El área por debajo de la función conforma un cuadrado con base uno y por tanto la altura (k) debe ser igual a uno.", 
            allow_retry = TRUE,
-           answer("k = 0", message = "No, pero intentalo de nuevo!"),
+           answer("k = 0", message = "No, pero inténtalo de nuevo!"),
            answer("k = 1", correct = TRUE),
            answer("k = 1/2", message = "Incorrecto. Intenta de nuevo!."),
-           answer("k = 1/4", message = "No...intentalo de nuevo!"),
+           answer("k = 1/4", message = "No...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -286,8 +286,8 @@ quiz(
   question("No es correcto afirmar que:", 
            correct = "Correcto!, P(X<2 ; Y<2) = 0.05.", 
            allow_retry = TRUE,
-           answer("E[X] = 0.1 + 2*0.35 + 3*0.55", message = "No...intentalo de nuevo!"),
-           answer("P(2,2) = 0.10", message = "No...intentalo de nuevo!"),
+           answer("E[X] = 0.1 + 2*0.35 + 3*0.55", message = "No...inténtalo de nuevo!"),
+           answer("P(2,2) = 0.10", message = "No...inténtalo de nuevo!"),
            answer("E[Y] = 0.2+0.50*2+0.30*3", message = "Incorrecto. Intenta de nuevo!."),
            answer("P(X<2 ; Y<2) = 0.05+ 0.05", correct = TRUE),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -316,9 +316,9 @@ quiz(
            correct = "Correcto!, E[X] = 0 * 1/3 + 1 * 1/2 + 2 * 1/6.", 
            allow_retry = TRUE,
            answer("E[X] = 1/2 + 1/6", correct = TRUE),
-           answer("V[X] = (1/2 + 4/6) - 25/36", message = "No...intentalo de nuevo!"),
+           answer("V[X] = (1/2 + 4/6) - 25/36", message = "No...inténtalo de nuevo!"),
            answer("f(x), es una función de distribución de probabilidad", message = "Incorrecto. Intenta de nuevo!."),
-           answer("F(1) = 5/6", message = "No...intentalo de nuevo!"),
+           answer("F(1) = 5/6", message = "No...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -471,7 +471,7 @@ cat("V[X] = ", Vx)
 
 ### **Problema 5**
 
-Un restaurante de comidas rápidas opera tanto en un local que da servicio en automovil (autoservicio) como en un segundo local que atiende a clientes que llegan caminando. En un dia cualquiera, la proporción del tiempo en servicio del autoservicio se representa por $X$, mientras que  $Y$ representa la proporción del tiempo en que el segundo local esta en servicios. La función de densidad conjunta que representa el comportamiento de estas dos variables está dado por :
+Un restaurante de comidas rápidas opera tanto en un local que da servicio en automóvil (autoservicio) como en un segundo local que atiende a clientes que llegan caminando. En un día cualquiera, la proporción del tiempo en servicio del autoservicio se representa por $X$, mientras que  $Y$ representa la proporción del tiempo en que el segundo local esta en servicios. La función de densidad conjunta que representa el comportamiento de estas dos variables está dado por :
    
 $$f(x,    y)=\left\{
 \begin{array}{cc}
@@ -514,7 +514,7 @@ adaptIntegrate(fxy, lowerLimit = c(0, 0), upperLimit = c(1, 1))# doble integral
 
 ### **Problema 6**
 
-Un restaurante de comidas rápidas opera tanto en un local que da servicio en automovil (autoservicio) como en un segundo local que atiende a clientes que llegan caminando. En un dia cualquiera, la proporción del tiempo en servicio del autoservicio se representa por $X$, mientras que  $Y$ representa la proporción del tiempo en que el segundo local esta en servicios. La función de densidad conjunta que representa el comportamiento de estas dos variables está dado por :
+Un restaurante de comidas rápidas opera tanto en un local que da servicio en automóvil (autoservicio) como en un segundo local que atiende a clientes que llegan caminando. En un día cualquiera, la proporción del tiempo en servicio del autoservicio se representa por $X$, mientras que  $Y$ representa la proporción del tiempo en que el segundo local esta en servicios. La función de densidad conjunta que representa el comportamiento de estas dos variables está dado por :
    
 $$f(x,y)=\left\{
 \begin{array}{cc}
@@ -552,7 +552,7 @@ adaptIntegrate(fxy, lowerLimit = c(0, 0), upperLimit = c(0.5, 0.3))# doble integ
 
 ### **Problema 7**
 
-Un restaurante de comidas rápidas opera tanto en un local que da servicio en automovil (autoservicio) como en un segundo local que atiende a clientes que llegan caminando. En un dia cualquiera, la proporción del tiempo en servicio del autoservicio se representa por $X$, mientras que  $Y$ representa la proporción del tiempo en que el segundo local esta en servicios. La función de densidad conjunta que representa el comportamiento de estas dos variables está dado por :
+Un restaurante de comidas rápidas opera tanto en un local que da servicio en automóvil (autoservicio) como en un segundo local que atiende a clientes que llegan caminando. En un día cualquiera, la proporción del tiempo en servicio del autoservicio se representa por $X$, mientras que  $Y$ representa la proporción del tiempo en que el segundo local esta en servicios. La función de densidad conjunta que representa el comportamiento de estas dos variables está dado por :
    
 $$f(x,y)=\left\{
 \begin{array}{cc}
@@ -591,7 +591,7 @@ adaptIntegrate(fxy, lowerLimit = c(0, 0), upperLimit = c(0.75, 0.750))
 
 ### **Problema 8**
 
-Un restaurante de comidas rápidas opera tanto en un local que da servicio en automovil (autoservicio) como en un segundo local que atiende a clientes que llegan caminando. En un dia cualquiera, la proporción del tiempo en servicio del autoservicio se representa por $X$, mientras que  $Y$ representa la proporción del tiempo en que el segundo local esta en servicios. La función de densidad conjunta que representa el comportamiento de estas dos variables está dado por :
+Un restaurante de comidas rápidas opera tanto en un local que da servicio en automóvil (autoservicio) como en un segundo local que atiende a clientes que llegan caminando. En un día cualquiera, la proporción del tiempo en servicio del autoservicio se representa por $X$, mientras que  $Y$ representa la proporción del tiempo en que el segundo local esta en servicios. La función de densidad conjunta que representa el comportamiento de estas dos variables está dado por :
    
 $$f(x,y)=\left\{
 \begin{array}{cc}

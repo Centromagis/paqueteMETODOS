@@ -33,7 +33,7 @@ library(MASS)
 knitr::include_graphics("images/banner2.png")
 ```
 
-El presente tutorial contiene preguntas relacionadas con regresión lineal simple, sus  conceptos más importantes y problemas que se plantean para alcanzar los objetivos planteados en esta unidad 
+El presente tutorial contiene preguntas relacionadas con regresión lineal simple, sus  conceptos más importantes y problemas que se plantean para alcanzar los objetivos planteados en esta unidad .
 
 </br></br>
   
@@ -93,21 +93,21 @@ $$
 | diagrama dispersión            | `library(ggplot2)` ; `ggplot(data, aes(x,y))+ geom_point()`      |
 | correlación                    | `cor(x,y)`                                                     |
 | test de correlación Ho: Rho=0  | `cor.test(x,y)`                                                |
-| estimacion MCO                 | `modelo1 <- lm(y~x)`                                           |
+| estimación MCO                 | `modelo1 <- lm(y~x)`                                           |
 | estimación MV                  | `modelo2 <- lm(y~x)$coefficients;emv`                          |
 | visualización de resultados    | `summary(modelo1)`                                             |
 | gráfico de regresión           | `ggplot(data, aes(x,y))+ geom_point() +`                       |
 |                                |        ` geom_smooth(method ="lm", level=0.95, formula = y~x)` |
 | yhat                           | `predict(modelo1)`                                             |
-| interbalos de confianza $\beta_0$,$\beta_1$ | `confint(modelo1)`                                |
+| intervalos de confianza $\beta_0$,$\beta_1$ | `confint(modelo1)`                                |
 | ANOVA                          | `anova(modelo1)`                                               |
 | residuos                       | `rstandard(modelo1)`                                           |
 | valores ajustados              | `fitted(modelo1)`                                              |
 | gráfico normalidad             | `qqnorm(modelo1)` ; `qqline(modelo1)`                          |
 | test de DW -autocorrelación    | `library("lmtest")` ; `dwtest(modelo1)`                        |
 | test de Goldfeld-Quandt - varianza constante | `gqtest(modelo1)`                                |
-| test de especificacion - Prueba RESET | `resettest(y~x, power=2, type="regressor")`             |
-| test de  White - varianza cosntante   | `modelo1=lm(residuos~x)`                                |
+| test de especificación - Prueba RESET | `resettest(y~x, power=2, type="regressor")`             |
+| test de  White - varianza constante   | `modelo1=lm(residuos~x)`                                |
 
 
 ```{r, echo=FALSE, , out.width="100%", fig.align = "center"}
@@ -134,10 +134,10 @@ quiz(
   question("La ecuación resultante de la estimación es. ", 
            correct = "Correcto!.", 
            allow_retry = TRUE,
-           answer("clientes = 19.9800 + 0.2606 ventas", message = "No...intentalo de nuevo!"),
+           answer("clientes = 19.9800 + 0.2606 ventas", message = "No...inténtalo de nuevo!"),
            answer("ventas = 19.9800 + 0.2606 clientes", correct = TRUE),    
            answer("ventas = 0.2606 clientes", message = "Incorrecto. Intenta de nuevo!."),
-           answer("clientes = 4.3897 + 0.0420 ventas", message = "No...intentalo de nuevo!"),
+           answer("clientes = 4.3897 + 0.0420 ventas", message = "No...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -167,9 +167,9 @@ quiz(
            correct = "Correcto!, el valor-p para la prueba de hipótesis relacionada con el intercepto indica que este valor es diferente de cero, mientras que para la prueba de la pendiente indica que no se rechaza que este valor sea cero.", 
            allow_retry = TRUE,
            answer("ventas = 19.9800", correct = TRUE),
-           answer("ventas = 0.2606 clientes", message = "No...intentalo de nuevo!"),
+           answer("ventas = 0.2606 clientes", message = "No...inténtalo de nuevo!"),
            answer("ventas = 19.9800 + 0.2606 clientes", message = "Incorrecto. Intenta de nuevo!."),
-           answer("ventas =0.2606 + 19.9800 clientes", message = "No...intentalo de nuevo!"),
+           answer("ventas =0.2606 + 19.9800 clientes", message = "No...inténtalo de nuevo!"),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
            submit_button = "Enviar respuesta",
            try_again_button = "Intentar de nuevo"),
@@ -188,8 +188,8 @@ quiz(
   question("Del método de estimación MCO  no es posible afirmar que :", 
            correct = "Correcto!, el método de MCO es un método de optimización matemático que encuentra los valores de los parámetros que minimicen los residuales, sin importar la relación existente entre las variables X y Y.", 
            allow_retry = TRUE,
-           answer("Las estimaciones de los parámetros son insesgadas", message = "Cerca, pero no...intentalo de nuevo!"),
-           answer("Las estimaciones son las mismas que se encuentran por el método de máxima verosimilitud", message = "Nop...intentalo de nuevo!"),
+           answer("Las estimaciones de los parámetros son insesgadas", message = "Cerca, pero no...inténtalo de nuevo!"),
+           answer("Las estimaciones son las mismas que se encuentran por el método de máxima verosimilitud", message = "Nop...inténtalo de nuevo!"),
            answer("Las estimaciones de los coeficientes son validas siempre y cuando se cumplan los supuestos sobre los errores", message = "Incorrecto. Intenta de nuevo!."),
            answer("Si los datos no tienen una forma lineal, el método de MCO no puede encontrar valores estimados para el intercepto y la pendiente de la linea de regresión", correct = TRUE),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -216,8 +216,8 @@ quiz(
   question("El resultado indica que la mejor transformación de la variable respuesta es: ", 
            correct = "Correcto! como se indica en el apartado de Experiencia/Transformaciones", 
            allow_retry = TRUE,
-           answer("Inverso del cuadrado de Y", message = "Cerca, pero no...intentalo de nuevo!"),
-           answer("Inverso de la raiz cuadrada de  Y", message = "Nop...intentalo de nuevo!"),
+           answer("Inverso del cuadrado de Y", message = "Cerca, pero no...inténtalo de nuevo!"),
+           answer("Inverso de la raiz cuadrada de  Y", message = "Nop...inténtalo de nuevo!"),
            answer("La raiz cuadrada de Y", correct = TRUE),
            answer("El cuadro de Y", message = "Incorrecto. Intenta de nuevo!."),  
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -238,8 +238,8 @@ quiz(
   question("No es un supuesto del modelo de regresión lineal simple", 
            correct = "Correcto!, aunque la varianza debe ser constante, no necesariamente será igual a uno.", 
            allow_retry = TRUE,
-           answer("Valor esperado de los errores  igual a cero", message = "Cerca, pero no...intentalo de nuevo!"),
-           answer("Errores con distribución normal", message = "Nop...intentalo de nuevo!"),
+           answer("Valor esperado de los errores  igual a cero", message = "Cerca, pero no...inténtalo de nuevo!"),
+           answer("Errores con distribución normal", message = "Nop...inténtalo de nuevo!"),
            answer("Varianza de los errores igual a uno", correct = TRUE),
            answer("Independencia de los errores ", message = "Incorrecto. Intenta de nuevo!."),
            # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -395,7 +395,7 @@ plot(modelo)
 
 La base de datos `vivienda`  contenida en `paqueteMETODOS` contiene las siguientes variables: id, zona, piso, estrato, preciom, areaconst,  parqueaderos, banios, habitaciones, tipo,  barrio, longitud, latitud 
 
-Contruya las siguientes dataset que cumpla con la siguientes condiciones:
+Construya las siguientes dataset que cumpla con la siguientes condiciones:
 
 * casas : solo casas 
 * casasSUR : solo casas ubicadas en el sur de la ciudad
